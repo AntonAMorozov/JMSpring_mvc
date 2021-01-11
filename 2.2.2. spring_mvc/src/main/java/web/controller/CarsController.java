@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Controller
 public class CarsController {
-    List<Car> cars = new ArrayList<>();
+    private List<Car> cars = new ArrayList<>();
 
     {
         cars.add(new Car("Hyundai", "Solaris", 2015));
