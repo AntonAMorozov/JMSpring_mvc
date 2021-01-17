@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,12 +13,16 @@
 <table border="2">
     <tr>
         <th>#</th>
-        <th>Car</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Year</th>
     </tr>
 
     <tr th:each="car, state : ${cars}">
-        <td th:utext="${state.count}">#</td>
-        <td th:utext="${car}">Car</td>
+        <td th:utext="${state.count}"></td>
+        <td th:utext="${car.brand}"></td>
+        <td th:utext="${car.model}"></td>
+        <td th:utext="${car.year}"></td>
     </tr>
 
 </table>

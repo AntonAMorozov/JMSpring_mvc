@@ -35,8 +35,4 @@ public class Car {
         this.year = year;
     }
 
-    @Override
-    public String toString() {
-        return brand + " " + model + ", " + year;
-    }
 }
